@@ -7,10 +7,11 @@
 </head>
 <body>
     <br>
+<fieldset style="background-color: beige;">
+<form action="/Users/Fredricksen/.bitnami/stackman/machines/xampp/volumes/root/htdocs/diplomado_web1/diplohtml1/guardado.html" method="POST">
 
-<form action="/Users/Fredricksen/.bitnami/stackman/machines/xampp/volumes/root/htdocs/diplomado_web1/diplohtml1/guardado.html" method="POST"></form>
-<div>
-    <fieldset>
+    <!--datos personales--><div>
+    <fieldset  style="background-color: rgb(225, 236, 253) ;">
         <legend> Datos&nbspPersonales:</legend><!--&nbsp para dar espacio-->
     <label for="name">Nombre</label> <br>
     <input type="name" name="name" id="nombre" placeholder="John Doo">
@@ -29,8 +30,9 @@
        value="1990-01-01"
        min="1980-01-01" max="2011-12-31"><br><br>
     </fieldset>
-      
-      <fieldset>
+    <!--datos de contacto-->
+      <div >
+      <fieldset style="background-color:  rgb(225, 236, 245) ;">
           <legend>Datos de Contacto</legend><br>
           <label for="domicilio">Domicilio</label><br>
           <input type="text" name="domicilio" id="direccion"><br><br>
@@ -53,14 +55,15 @@
          <br><br>
          <label for="tel">Telefono</label><br>
          <input type="tel" name="telefono" id="number"><br><br>
-        </fieldset><br>
-
-        <fieldset>
+        </fieldset>
+    <!--datos de interes-->
+        </div>
+        <fieldset style="background-color: rgb(225, 236, 253)">
             <legend>Intereses&nbspPersonales</legend>
      
             <label for="interes">Me apaciona realizar</label><br>
             <textarea placeholder="Lo que mas me gusta hacer es.." name="interes" id="interes" rows="10" cols="50">
-                       </textarea>
+                Lo que mas me gusta hacer es... </textarea>
           <br>
       <label for="intereses">Tambien me interesa</label><br>
       <div>
@@ -81,19 +84,25 @@
           <input type="checkbox" id="Fotografia" name="Fotografia" value="Fotografia">
           <label for="Deporte"> Fotografia</label><br>
         </fieldset>
-    <hr>
-    <label for="email">Email</label>
-     <input type="email" name="email" id="email">&nbsp;&nbsp;
-    <label for="password">Password</label>
-     <input type="password" name="password" id="password">
-    <br>
+        </div>
+
+        <div style="background-color: rgb(225, 236, 250);">
+            <hr>
+          <label for="email"  >Email</label>
+         <input type="email" name="email" id="email">&nbsp;&nbsp;
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+          <hr>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color: rgb(156, 176, 236); border: whitesmoke ;" type="submit"  value="Guardar" >
+        </div>
     </div>
 
 </div>
+</fieldset>
 
 
-
-
+</form>
     
 </body>
 </html>
