@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormularioP</title>
+</head>
+<body>
+    <br>
+<fieldset style="background-color: beige;">
+<form action="/Users/Fredricksen/.bitnami/stackman/machines/xampp/volumes/root/htdocs/diplomado_web1/diplohtml1/guardado.html" method="POST">
+
+    <!--datos personales--><div>
+    <fieldset  style="background-color: rgb(225, 236, 253) ;">
+        <legend> Datos&nbspPersonales:</legend><!--&nbsp para dar espacio-->
+    <label for="name">Nombre</label> <br>
+    <input type="name" name="name" id="nombre" placeholder="John Doo">
+    <br><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+       
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="female">Femenino</label><br>
+        
+        <input type="radio" id="other" name="genero" value="other">
+        <label for="other">Otro</label><br><br>
+
+        <label for="start">Fecha de nacimiento:</label><br>
+     <input type="date" id="start" name="trip-start"
+       value="1990-01-01"
+       min="1980-01-01" max="2011-12-31"><br><br>
+    </fieldset>
+    <!--datos de contacto-->
+      <div >
+      <fieldset style="background-color:  rgb(225, 236, 245) ;">
+          <legend>Datos de Contacto</legend><br>
+          <label for="domicilio">Domicilio</label><br>
+          <input type="text" name="domicilio" id="direccion"><br><br>
+          <label for="colonia">Colonia</label><br>
+          <input type="text" name="colonia" id="direccion"><br><br>
+          <label for="ciudad" >Ciudad</label><br>
+          <input type="text" name="ciudad" id="direccion"><br><br>
+          <label for="Estado">Estado</label><br>
+          <select name="Estado" required>
+            <option value="">Seleccione un Estado...</option>
+            <option value="Colima">Colima</option>
+            <option value="Jalisco" selected> Jalisco </option>
+            <option value="Zacatecas">Zacatecas</option>
+            <option value="Aguascalientes">Aguascalientes</option>
+            <option value="Monterrey">Monterrey</option>
+            <option value="Sinaloa">Sinaloa</option>
+            <option value="Durango">Durango</option>
+            <option value="Cdmx">Cdmx</option>
+          </select>
+         <br><br>
+         <label for="tel">Telefono</label><br>
+         <input type="tel" name="telefono" id="number"><br><br>
+        </fieldset>
+    <!--datos de interes-->
+        </div>
+        <fieldset style="background-color: rgb(225, 236, 253)">
+            <legend>Intereses&nbspPersonales</legend>
+     
+            <label for="interes">Me apaciona realizar</label><br>
+            <textarea placeholder="Lo que mas me gusta hacer es.." name="interes" id="interes" rows="10" cols="50"   
+            >Lo que mas me gusta hacer es... </textarea>
+          <br>
+      <label for="intereses">Tambien me interesa</label><br>
+      <div>
+          <input type="checkbox" id="Deporte" name="Deporte" value="Deporte">
+          <label for="Deporte"> Deporte</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" id="Ficcion" name="Ficcion" value="Ficcion">
+          <label for="Deporte"> Ficcion</label><br>
+          <input type="checkbox" id="Tecnologia" name="Tecnologia" value="Tecnologia">
+          <label for="Tecnologia"> Tecnologia</label>&nbsp;
+          <input type="checkbox" id="Musica" name="Musica" value="Musica">
+          <label for="Musica">Musica</label><br>
+          <input type="checkbox" id="Ciencia" name="Ciencia" value="Ciencia">
+          <label for="Ciencia"> Ciencia</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" id="Peliculas" name="Peliculas" value="Peliculas">
+          <label for="Peliculas"> Peliculas</label><br>
+          <input type="checkbox" id="Arte" name="Arte" value="Arte">
+          <label for="Arte"> Arte </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" id="Fotografia" name="Fotografia" value="Fotografia">
+          <label for="Deporte"> Fotografia</label><br>
+        </fieldset>
+        </div>
+
+        <div style="background-color: rgb(225, 236, 250);">
+            <hr>
+          <label for="email"  >Email</label>
+         <input type="email" name="email" id="email">&nbsp;&nbsp;
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+          <hr>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color: rgb(156, 176, 236); border: whitesmoke ;" type="submit"  value="Guardar" >
+        </div>
+    </div>
+
+</div>
+</fieldset>
+
+
+</form>
+    
+</body>
+</html>
