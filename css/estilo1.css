@@ -1,0 +1,20 @@
+
+    body{
+        background-color: lightblue;
+    }
+    h1{
+        color: lightcyan;
+        text-align:center
+    }
+    h2{
+        color: lightpink; text-align: center;
+    }
+    p{
+        color: magenta; text-align: justify, center;
+        font-family: verdana;
+        font-size: 20px;
+        /*prefijos para exploradores*/
+        background-image: -moz-linear-gradient(top, #FAFA58 #FF0000);
+        background-color: #F4FA58;
+    }
+
